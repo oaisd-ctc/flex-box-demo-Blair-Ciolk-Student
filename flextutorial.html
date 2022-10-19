@@ -11,6 +11,9 @@
     <h1 style="color:#e25fe9;">Flex Box Tutorial</h1>
     <h4 style="text-align:center;">(Most properties equipped with center justification)</h4>
 
+    <h1 style="text-align:left; color:rgb(226,83,234); text-decoration:underline;">Flex Container:</h1>
+   
+<h2 style="text-align:left; color:rgb(226,83,234);">Flex Direction</h2>
 <article>
     <div class="flex-container">
         <div>1</div>
@@ -19,40 +22,165 @@
     </div>
 
     <div id="para1">
-        <p>&larr;This is a <strong>row-reverse</strong> flex direction. This puts all of the flex items (the numbers and boxes) in the opposite order they are written in.
+        <p>&larr;This is a <strong>default</strong> flex direction. This puts all of the flex items (the numbers and boxes) in the same order they are written in. (flex-direction:default;)
             <br>
             <div id="para1div">
-                <!-- <img src="/pics/para1.png" alt="Code showing the order of div classes going 1 to 3 vertically down" id="para1pic"/> -->
             </div>
         </p>
     </div>
 </article>
 
 <article>
-    <div class="flex-container2">
+    <div class="flex-container" style="flex-direction:column;">
         <div>1</div>
         <div>2</div>
         <div>3</div>
     </div>
 
     <div id="para1">
-        <p>&larr;This is a <strong>flex-end</strong>, which means all of the items in the box are put at the end instead of the default.
+        <p>&larr;This is a <strong>column</strong> flex direction. This puts all of the flex items (the numbers and boxes) in columns, which are up and down. (flex-direction:column;)
             <br>
-            
+            <div id="para1div">
+            </div>
         </p>
     </div>
 </article>
 
+
+
+
+
+<hr>
+<h2 style="text-align:left; color:rgb(226,83,234);">Flex Wrap</h2>
 <article>
-    <div class="flex-container3">
+    <div class="flex-container" style="flex-wrap: wrap;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>
+    
+    <div id="para1">
+        <p>&larr;This is <strong>flex wrap</strong>. This allows for the boxes staying in the same order when the webpage shrinks. (flex-wrap:wrap;)
+            <br>
+            <div id="para1div">
+            </div>
+        </p>
+    </div>
+</article>
+
+<h2 style="text-align:left; color:rgb(226,83,234);">Flex No Wrap</h2>
+<article>
+    <div class="flex-container" style="flex-wrap: nowrap;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    
+    <div id="para1">
+        <p>&larr;This is <strong>flex wrap</strong>. This changes the boxes so they won't wrap, and will try to stay in the same order. (flex-wrap: nowrap;)
+            <br>
+            <div id="para1div">
+            </div>
+        </p>
+    </div>
+</article>
+
+<h2 style="text-align:left; color:rgb(189, 63, 196);">Flex Wrap Reverse</h2>
+<article>
+    <div class="flex-container" style="flex-wrap: wrap-reverse;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    
+    <div id="para1">
+        <p>&larr;This is <strong>flex wrap</strong>. This changes the boxes so they wrap around in the opposite order they were coded in. (flex-wrap: wrap-reverse;)
+            <br>
+            <div id="para1div">
+            </div>
+        </p>
+    </div>
+</article>
+
+
+<hr>
+<h1 style="text-align:left; color:rgb(226,83,234); text-decoration: underline;">Align Items</h1>
+<h2 style="text-align:left; color:rgb(226,83,234);">Center Align</h2>
+<article>
+    <div class="flex-container8">
         <div>1</div>
         <div>2</div>
         <div>3</div>
     </div>
-
+    
     <div id="para1">
-        <p>
-            &larr;This is <strong>space-around</strong>, which puts space around the items, obviously, and helps to make these items more organized and easier to view.        
+        <p>&larr;This is <strong>center align</strong>. This allows for the boxes to stay in the center of the div container. (align-items: center;)
+            <br>
+            <div id="para1div">
+            </div>
+        </p>
+    </div>
+</article>
+
+<h2 style="text-align:left; color:rgb(226,83,234);">Flex Start Align</h2>
+<article>
+    <div class="flex-container8" style="align-items: flex-start;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    
+    <div id="para1">
+        <p>&larr;This is <strong>flex start</strong>. This allows for the boxes to stay at the start of the div container. (align-items: flex-start;)
+            <br>
+            <div id="para1div">
+            </div>
+        </p>
+    </div>
+</article>
+
+<h2 style="text-align:left; color:rgb(226,83,234);">Flex End Align</h2>
+<article>
+    <div class="flex-container8" style="align-items: flex-end;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    
+    <div id="para1">
+        <p>&larr;This is <strong>flex end</strong>. This allows for the boxes to stay at the end of the div container. (align-items: flex-end;)
+            <br>
+            <div id="para1div">
+            </div>
+        </p>
+    </div>
+</article>
+
+<h2 style="text-align:left; color:rgb(226,83,234);">Flex Stretch Align</h2>
+<article>
+    <div class="flex-container8" style="align-items: stretch;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    
+    <div id="para1">
+        <p>&larr;This is <strong>flex end</strong>. This allows for the boxes to stay at the end of the div container. (align-items: stretch;)
+            <br>
+            <div id="para1div">
+            </div>
         </p>
     </div>
 </article>
@@ -61,22 +189,27 @@
 
 
 
+
+<hr>
+<h1 style="text-align:left; color:rgb(226,83,234); text-decoration:underline;">Flex Items:</h1>
+<h2 style="text-align:left; color:rgb(226,83,234);">Order</h2>
 <article>
-    <div class="flex-container4">
-        <div>1</div>
-        <div style="flex-basis: 10em;">2</div>
+    <div class="flex-container2">
+        <div >1</div>
+        <div style="order: 3;">2</div>
         <div>3</div>
     </div>
 
     <div id="para1">
-        <p>
-            &larr; This is a <strong>flex-basis</strong>, which allows you to change the specific size of an flex item, and is easiest to do with inline CSS.
+        <p>&larr;This is <strong>order</strong>, which means the items do not appear in the same way as the code states. (style="order: 3;")
+            <br>
         </p>
     </div>
 </article>
 
 
-
+<hr>
+<h2 style="text-align:left; color:rgb(226,83,234);">Flex</h2>
 <article>
     <div class="flex-container5">
         <div style="flex: 8em 0 0">1</div>
@@ -86,24 +219,28 @@
 
     <div id="para1">
         <p>
-            &larr; Flex item 1 is a <strong>flex</strong>, which is a property that groups together the <em>flex-grow, flex-shrink, and </em><em>flex-basis</em> properties. Flex item 1 is growable by 30.
+            &larr; Flex item 1 is a <strong>flex</strong>, which is a property that groups together the <em>flex-grow, flex-shrink, and </em><em>flex-basis</em> properties. Flex item 1 is flexed by 8em.
         </p>
     </div>
 </article>
 
+<hr>
+<h2 style="text-align:left; color:rgb(226,83,234);">Align Self</h2>
 <article>
-    <div class="flex-container6">
-        <div>1</div>
-        <div style="order: 1;">2</div>
+    <div class="flex-container5">
+        <div style="align-self: center;">1</div>
+        <div>2</div>
         <div>3</div>
     </div>
 
     <div id="para1">
         <p>
-            &larr; This is an <strong>order</strong>, which allows you to change the specific order of flex items.
+            &larr; Flex item 1 is a <strong>align self</strong>, which allows the boxes to align itself.
         </p>
     </div>
 </article>
+
+
 
 <footer style="text-align:end;">Made by Blair Ciolk</footer>
 </br>
